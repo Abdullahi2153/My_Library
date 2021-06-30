@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/lemon"
+        android:text="My Library"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgLogo" />
+
+    <Button
+        android:id="@+id/btnAllBooks"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="See All Books"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtName" />
+
+    <Button
+        android:id="@+id/btnCurrentlyReading"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Currently Reading Books"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="@+id/btnAllBooks"
+        app:layout_constraintStart_toStartOf="@+id/btnAllBooks"
+        app:layout_constraintTop_toBottomOf="@+id/btnAllBooks" />
+
+    <Button
+        android:id="@+id/btnAlreadyRead"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Already Read Books"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="@+id/btnCurrentlyReading"
+        app:layout_constraintStart_toStartOf="@+id/btnCurrentlyReading"
+        app:layout_constraintTop_toBottomOf="@+id/btnCurrentlyReading" />
+
+    <Button
+        android:id="@+id/btnFavorite"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="See Your Favorites"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="@+id/btnWantToRead"
+        app:layout_constraintHorizontal_bias="0.513"
+        app:layout_constraintStart_toStartOf="@+id/btnWantToRead"
+        app:layout_constraintTop_toBottomOf="@+id/btnWantToRead" />
+
+    <Button
+        android:id="@+id/btnWantToRead"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Your WishList"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="@+id/btnAlreadyRead"
+        app:layout_constraintHorizontal_bias="0.478"
+        app:layout_constraintStart_toStartOf="@+id/btnAlreadyRead"
+        app:layout_constraintTop_toBottomOf="@+id/btnAlreadyRead" />
+
+    <ImageView
+        android:id="@+id/imgLogo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="20dp"
+        android:src="@mipmap/my_logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txnLicense"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginBottom="8dp"
+        android:text="Developed by Abdullahi at abdullahi.abdiaziz.hussein@gmail.com"
+        android:textSize="10sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnAbout"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="about"
+        app:layout_constraintEnd_toEndOf="@+id/btnFavorite"
+        app:layout_constraintStart_toStartOf="@+id/btnFavorite"
+        app:layout_constraintTop_toBottomOf="@+id/btnFavorite" />
+</androidx.constraintlayout.widget.ConstraintLayout>

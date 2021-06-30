@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/parent"
+    app:cardCornerRadius="7dp"
+    app:cardElevation="7dp"
+    android:layout_margin="5dp">
+
+    <RelativeLayout
+        android:layout_width="200dp"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/collapsedRelLayout">
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="220dp"
+                android:id="@+id/imgBook"
+                android:src="@mipmap/ic_launcher"/>
+
+            <TextView
+                android:id="@+id/txtBookName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Book Name"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:layout_below="@+id/imgBook"
+                android:layout_marginTop="7dp"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_down_arrow"
+                android:layout_below="@+id/imgBook"
+                android:layout_marginTop="7dp"
+                android:id="@+id/btnDownArrow"
+                android:layout_alignParentEnd="true"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/collapsedRelLayout"
+            android:id="@+id/expandedRelLayout"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Author:"
+                android:id="@+id/authorText"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Abdullahi"
+                android:id="@+id/txtAuthor"
+                android:layout_below="@+id/authorText"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Short Description"
+                android:id="@+id/txtShortDesc"
+                android:layout_below="@+id/txtAuthor"
+                android:layout_marginTop="7dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_up_arrow"
+                android:layout_below="@id/txtShortDesc"
+                android:layout_alignParentEnd="true"
+                android:id="@+id/btnUpArrow"/>
+
+            <TextView
+                android:id="@+id/btnDelete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Delete"
+                android:textColor="@color/pink"
+                android:layout_below="@+id/txtShortDesc"
+                android:layout_toStartOf="@+id/btnUpArrow"
+                android:layout_marginEnd="7dp"
+                android:visibility="gone"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+
+</com.google.android.material.card.MaterialCardView>
